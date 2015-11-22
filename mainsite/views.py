@@ -12,9 +12,11 @@ def video(request):
 
 	video_id = request.GET.get('id')
 	video_detail = video_utility.get_video(video_id)
-	related_video_details = video_utility.get_related_video(video_id)
+	related_video_details = video_utility.get_related_video(video_detail)
+
 	passed_dict['video_detail'] = video_detail
-	
+	passed_dict['related_video_details'] = related_video_details
+
 	return render_to_response('video.html', passed_dict) 
 
 def cron_check_video(request):
