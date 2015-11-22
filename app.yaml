@@ -1,0 +1,16 @@
+application: kinco-yoga
+version: 2
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /static
+  static_dir: static
+
+- url: .*
+  script: KincoYoga.wsgi.application
+
+libraries:
+- name: django
+  version: 1.5

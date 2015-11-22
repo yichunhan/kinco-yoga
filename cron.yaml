@@ -1,0 +1,4 @@
+cron:
+- description: daily summary job
+  url: /cron_check_video/
+  schedule: every 1 hours
