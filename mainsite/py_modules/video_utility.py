@@ -1,14 +1,13 @@
 import datetime
-from db_utility import DBUtility
+from ..models import Video
 
 class VideoUtility:
 	def get_video(self, video_id):
-		db_utility = DBUtility()
-		video_detail = db_utility.search_video('==', video_id=video_id)
+		video_detail = Video.query(Video.video_id == video_id)
 
 		if video_detail == None:
 			today = datetime.datetime.today()
-			video_detail = db_utility.search_video('<=', upload_date=today)
+			video_detail = Video.query(Video.upload_date <= today)
 
 		return video_detail
 

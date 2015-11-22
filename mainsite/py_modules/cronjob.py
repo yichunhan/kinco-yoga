@@ -1,11 +1,10 @@
 import urllib2, datetime, re
-from db_utility import DBUtility
+from ..models import Video
 
 class CronJob:
 	feed_url = r'https://www.youtube.com/feeds/videos.xml?channel_id=UC6-xZA6zHroZRCvHxrA_2Og'
 
 	def check_videos(self):
-		db_utility = DBUtility()
 		today = datetime.date.today().strftime('%Y-%m-%d')
 		entry_ptn = re.compile('\<entry\>(.*?)\<\/entry\>', re.DOTALL)
 		video_id_ptn = re.compile('\<yt\:videoId\>(.*?)\<\/yt\:videoId\>')		
@@ -29,10 +28,14 @@ class CronJob:
 			description = description_ptn.findall(entry)[0]
 			upload_date = upload_date_ptn.findall(entry)[0].split('T')[0]
 
-			if upload_date == today:
+			video_detail = Video.query(Video.video_id == video_id)
+
+			if upload_date == today and video_detail == None:
 				upload_date = datetime.datetime.strptime(upload_date, '%Y-%m-%d')
-				db_utility.store_video(title=title, description=description, solar_term='None',
+
+				store_document = Video(title=title, description=description, solar_term='None',
 									   video_id=video_id, upload_date=upload_date, thumbnail=thumbnail)
+				store_document.put()
 
 		return True
 
