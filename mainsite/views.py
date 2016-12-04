@@ -1,23 +1,42 @@
 from django.shortcuts import render_to_response
-from mainsite.py_modules.cronjob import CronJob
-from mainsite.py_modules.video_utility import VideoUtility
+from mainsite.modules.cronjob import CronJob
+from mainsite.modules.video_utility import VideoUtility
 
 def home(request):
 	passed_dict = {}
-	return render_to_response('home.html', passed_dict) 
+	return render_to_response('home.html', passed_dict)
 
-def video(request):
+def purpose(request):
 	passed_dict = {}
-	video_utility = VideoUtility()
+	return render_to_response('purpose.html', passed_dict)
 
-	video_id = request.GET.get('id')
-	video_detail = video_utility.get_video(video_id)
-	related_video_details = video_utility.get_related_video(video_detail)
+def introduction(request):
+	passed_dict = {}
+	return render_to_response('introduction.html', passed_dict)
 
-	passed_dict['video_detail'] = video_detail
-	passed_dict['related_video_details'] = related_video_details
+def coaches(request, teacher_name=None):
+	passed_dict = {}
+	return render_to_response('coaches.html', passed_dict)
 
-	return render_to_response('video.html', passed_dict) 
+def classes(request, class_index=None):
+	passed_dict = {}
+	return render_to_response('classes.html', passed_dict)
+
+def videos(request):
+	passed_dict = {}
+	return render_to_response('videos.html', passed_dict)
+
+def experiences(request, role=None):
+	passed_dict = {}
+	return render_to_response('experiences.html', passed_dict)
+
+def articles(request, article_type=None):
+	passed_dict = {}
+	return render_to_response('articles.html', passed_dict)
+
+def q_and_a(request):
+	passed_dict = {}
+	return render_to_response('q_and_a.html', passed_dict)
 
 def cron_check_video(request):
 	cronjob = CronJob()

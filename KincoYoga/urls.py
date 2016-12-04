@@ -18,10 +18,14 @@ from django.contrib import admin
 
 urlpatterns = [
     #url(r'^admin/', include(admin.site.urls)),
-    url(r'^about/$', 'mainsite.views.about'),
-    url(r'^class/$', 'mainsite.views.class'),
-    url(r'^video/$', 'mainsite.views.video'),
-    url(r'^contact/$', 'mainsite.views.contact'),
+    url(r'^purpose/$', 'mainsite.views.purpose'),
+    url(r'^introduction/$', 'mainsite.views.introduction'),
+    url(r'^coaches/$', 'mainsite.views.coaches'),
+    url(r'^classes/$', 'mainsite.views.classes'),
+    url(r'^videos/$', 'mainsite.views.videos'),
+    url(r'^experiences/$', 'mainsite.views.experiences'),
+    url(r'^articles/$', 'mainsite.views.articles'),
+    url(r'^q_and_a/$', 'mainsite.views.q_and_a'),
     url(r'^cron_check_video/$', 'mainsite.views.cron_check_video'),
     url(r'^$', 'mainsite.views.home'),
 ]
