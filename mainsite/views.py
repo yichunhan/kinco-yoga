@@ -1,5 +1,7 @@
-from django.shortcuts import render_to_response
+from django.shortcuts import render_to_response, redirect
 from mainsite.modules.cronjob import CronJob
+from mainsite.modules.coach_utility import CoachUtility
+from mainsite.modules.class_utility import ClassUtility
 from mainsite.modules.video_utility import VideoUtility
 
 def home(request):
@@ -14,13 +16,29 @@ def introduction(request):
 	passed_dict = {}
 	return render_to_response('introduction.html', passed_dict)
 
-def coaches(request, teacher_name=None):
+def coaches(request, coach_name=None):
 	passed_dict = {}
-	return render_to_response('coaches.html', passed_dict)
+	coach_utility = CoachUtility()
+
+	if coach_name:
+		coach_info = coach_utility.get_coach_info(coach_name.lower())
+		if coach_info:
+			passed_dict['coach_info'] = coach_info
+			return render_to_response('coach_one.html', passed_dict)
+		return redirect('/coaches/')
+	return render_to_response('coach_all.html', passed_dict)
 
 def classes(request, class_index=None):
 	passed_dict = {}
-	return render_to_response('classes.html', passed_dict)
+	class_utility = ClassUtility()
+
+	if class_index:
+		class_info = class_utility.get_class_info(class_index)
+		if class_info:
+			passed_dict['class_info'] = class_info
+			return render_to_response('class_one.html', passed_dict)
+		return redirect('/classes/')
+	return render_to_response('class_all.html', passed_dict)
 
 def videos(request):
 	passed_dict = {}

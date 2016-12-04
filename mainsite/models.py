@@ -2,15 +2,13 @@ from django.db import models
 from google.appengine.ext import ndb
 
 # Create your models here.
-class ClubInfo(ndb.Model):
-	purpose = ndb.TextProperty()
-	introduction = ndb.TextProperty()
-
 class Coach(ndb.Model):
 	name = ndb.StringProperty()
+	display_name = ndb.StringProperty()
 	experience = ndb.StringProperty()
 
 class Class(ndb.Model):
+	index = ndb.StringProperty() 
 	name = ndb.StringProperty()
 	coach = ndb.StringProperty()
 	time = ndb.TimeProperty()
@@ -61,7 +59,7 @@ class OtherArticle(ndb.Model):
 class FAQ(ndb.Model):
 	question = ndb.StringProperty()
 	answer = ndb.TextProperty()
-	
+
 class Video(ndb.Model):
 	video_id = ndb.StringProperty()
 	upload_date = ndb.DateProperty()
