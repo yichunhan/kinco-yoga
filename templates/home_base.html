@@ -1,12 +1,184 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    {% block share_head %}{% endblock %}
+	<title></title>
+	{% block share_head %}{% endblock %}
 </head>
 
+
 <body>
-this is home page.
+	
+	
+    <!-- HEADER -->
+    <div class="pc">{% block share_menu %}{% endblock %}</div>
+	<div class="iframe-rwd mobile">{% block share_menu_mobile %}{% endblock %}</div>
+
+    <!-- /HEADER -->
+    
+    
+    <!-- KV -->
+    <div class="kv_full index_kv">
+	    <div class="swiper-container">
+	        <ul class="swiper-wrapper">
+	            <li class="swiper-slide"><img src="/static/images/index/kv_1.jpg"></li>
+	            <li class="swiper-slide"><img src="/static/images/index/kv_1.jpg"></li>
+	            <li class="swiper-slide"><img src="/static/images/index/kv_1.jpg"></li>
+	            <li class="swiper-slide"><img src="/static/images/index/kv_1.jpg"></li>
+	            <li class="swiper-slide"><img src="/static/images/index/kv_1.jpg"></li>
+	        </ul>
+	        <!-- Add Pagination -->
+	        <div class="swiper-pagination"></div>
+	        <!-- Add Arrows -->
+	        <div class="swiper-button-next"></div>
+		    <div class="swiper-button-prev"></div>
+	    </div>
+    </div>
+    <!-- /KV -->
+      
+    
+    <!-- INTRO -->
+    <div class="intro_full">
+        <div class="intro">
+            <div class="intro_img"> <img src="/static/images/index/kinco.jpg"></div>
+            
+            <div class="intro_txt">
+                <h2>金子老師節氣運動館</h2>
+                <p>
+                    為什麼要跟著節氣做運動？
+                    人體是個小宇宙，生活在大宇宙中，身體會隨著二十四節氣的變化、經絡的運行，隨時產生不同的反應與症狀。
+                    順應春、夏、秋、冬四季變化來運動和養生，讓身體能正常運作、新陳代謝良好、毒素跟脂肪就不會囤積在體內。<br>
+                    <br>
+                    &bull; 春季保肝∼減重塑身最佳季節！<br>
+                    &bull; 夏季養心∼新陳代謝旺盛把握快速燃脂！<br>
+                    &bull; 秋季滋肺∼藉由運動調養情緒睡得好，躺著都能瘦！<br>
+                    &bull; 冬季固腎∼抗老化從下半身開始！<br>
+                    <br>
+                    金子老師要盡所知、所學與所能，結合東西方合併的保健知識與保養方法，融入安全客製化的教學內容，讓全家老少一起來運動！
+                    以四季節氣為核心精神，搭配安全、簡單、易學、實用舒服的運動。
+                    在快速變化的社會中找回單純的生活、看到真實的自己，反璞歸真熱愛生命尊重大自然！
+                    相信透過節氣運動，不論是身體或是心靈，都會朝向正面發展，提升正向能量！
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- /INTRO -->
+    
+    
+    <!-- NEWS -->
+    <div class="news_full" id="news_box">
+        <div class="news">
+            <h2>最新消息</h2>
+            <ul>
+                <li>
+                    <a data-fancybox="news" data-src="#news20170101" href="javascript:;">
+	                    <div class="news_date">2017-01-01</div>
+	                    <div class="news_title">這只是假字這只是假字這只是假字這只是假字這只是假字這只是假字</div>
+                    </a>
+                    <div class="news_txt" id="news20170101">1 最新消息的展開文字，都是假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的文字唷</div>
+                </li>
+                <li>
+                    <a data-fancybox="news" data-src="#news20170102" href="javascript:;">
+	                    <div class="news_date">2017-01-02</div>
+	                    <div class="news_title">這只是假字這只是假字這只是假字這只是假字這只是假字這只是假字</div>
+                    </a>
+                    <div class="news_txt" id="news20170102">2 最新消息的展開文字，都是假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的文字唷</div>
+                </li><li>
+                    <a data-fancybox="news" data-src="#news20170103" href="javascript:;">
+	                    <div class="news_date">2017-01-03</div>
+	                    <div class="news_title">這只是假字這只是假字這只是假字這只是假字這只是假字這只是假字</div>
+                    </a>
+                    <div class="news_txt" id="news20170103">3 最新消息的展開文字，都是假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的文字唷</div>
+                </li><li>
+                    <a data-fancybox="news" data-src="#news20170104" href="javascript:;">
+	                    <div class="news_date">2017-01-04</div>
+	                    <div class="news_title">這只是假字這只是假字這只是假字這只是假字這只是假字這只是假字</div>
+                    </a>
+                    <div class="news_txt" id="news20170104">4 最新消息的展開文字，都是假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的文字唷</div>
+                </li><li>
+                    <a data-fancybox="news" data-src="#news20170105" href="javascript:;">
+	                    <div class="news_date">2017-01-05</div>
+	                    <div class="news_title">這只是假字這只是假字這只是假字這只是假字這只是假字這只是假字</div>
+                    </a>
+                    <div class="news_txt" id="news20170105">5 最新消息的展開文字，都是假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的文字唷</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /NEWS -->
+    
+    
+    <!-- COURSE -->
+    <div class="course_full" id="course">
+        <div class="course">
+            <h2>本月課程</h2>
+            <ul>
+				<li>
+					<div class="course_week">週一課程</div>
+					<div class="course_content course_mon">09:00~10:00<br>經絡和緩瑜伽</div>
+					<div class="course_content course_mon">10:30~11:30<br>抗力球皮拉提斯</div>
+					<div class="course_content course_mon">12:10~13:10<br>經絡皮拉提斯</div>
+					<div class="course_content course_mon" style="display: none;">&nbsp;</div>
+					<div class="course_content course_mon" style="display: none;">&nbsp;</div>
+				</li>
+				<li>
+					<div class="course_week">週二課程</div>
+					<div class="course_content course_tus">18:30~19:30<br>經絡瑜伽提斯</div>
+					<div class="course_content course_tus">19:40~20:40<br>抗力球皮拉提斯</div>
+					<div class="course_content course_tus">20:50~21:50<br>經絡伸展瑜伽</div>
+					<div class="course_content course_tus" style="display: none;">&nbsp;</div>
+					<div class="course_content course_tus" style="display: none;">&nbsp;</div>
+				</li>
+				<li>
+					<div class="course_week">週三課程</div>
+					<div class="course_content course_wed">09:15~10:15<br>彈力帶皮拉提斯</div>
+					<div class="course_content course_wed">10:30~11:30<br>彈力帶瑜伽提斯</div>
+					<div class="course_content course_wed">12:10~13:10<br>抗力球皮拉提斯</div>
+					<div class="course_content course_wed">18:30~19:30<br>經絡和緩瑜伽</div>
+					<div class="course_content course_wed">19:40~20:40<br>經絡瑜伽提斯</div>
+				</li>
+				<li>
+					<div class="course_week">週四課程</div>
+					<div class="course_content course_thu">18:30~19:30<br>經絡皮拉提斯</div>
+					<div class="course_content course_thu">19:40~20:40<br>彈力帶瑜伽提斯</div>
+					<div class="course_content course_thu" style="display: none;">&nbsp;</div>
+					<div class="course_content course_thu" style="display: none;">&nbsp;</div>
+					<div class="course_content course_thu" style="display: none;">&nbsp;</div>
+				</li>
+				<li>
+					<div class="course_week">週五課程</div>
+					<div class="course_content course_fri">09:00~10:00<br>彈力帶瑜伽提斯</div>
+					<div class="course_content course_fri">10:30~11:30<br>彈力帶皮拉提斯</div>
+					<div class="course_content course_fri">12:10~13:10<br>經絡伸展瑜伽</div>
+					<div class="course_content course_fri" style="display: none;">&nbsp;</div>
+					<div class="course_content course_fri" style="display: none;">&nbsp;</div>
+				</li>
+				<li>
+					<div class="course_week">週六課程</div>
+					<div class="course_content course_sat">10:00~11:00<br>抗力球皮拉提斯</div>
+					<div class="course_content course_sat">11:10~12:10<br>抗力球瑜伽提斯</div>
+					<div class="course_content course_sat" style="display: none;">&nbsp;</div>
+					<div class="course_content course_sat" style="display: none;">&nbsp;</div>
+					<div class="course_content course_sat" style="display: none;">&nbsp;</div>
+				</li>
+				<li>
+					<div class="course_week">週日課程</div>
+					<div class="course_content course_sun">10:00~11:00<br>抗力球瑜伽提斯</div>
+					<div class="course_content course_sun">11:10~12:10<br>彈力帶皮拉提斯</div>
+					<div class="course_content course_sun" style="display: none;">&nbsp;</div>
+					<div class="course_content course_sun" style="display: none;">&nbsp;</div>
+					<div class="course_content course_sun" style="display: none;">&nbsp;</div>
+				</li>
+			</table>
+			<div class="more"><a href="class_all_base.html">更多課程資訊 >></a></div>
+        </div>
+    </div>
+    <!-- /COURSE -->
+    
+    
+	<!-- FOOTER -->
+	<div clss="bottom_cover">{% block share_foot %}{% endblock %}</div>
+    <!-- /FOOTER -->  
+    
 </body>
 
 </html>

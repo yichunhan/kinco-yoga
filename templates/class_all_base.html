@@ -1,12 +1,126 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    {% block share_head %}{% endblock %}
+	<title></title>
+	{% block share_head %}{% endblock %}
 </head>
 
+
 <body>
-this is class page.
+	
+	
+    <!-- HEADER -->
+	<div class="pc">{% block share_menu %}{% endblock %}</div>
+	<div class="iframe-rwd mobile">{% block share_menu_mobile %}{% endblock %}</div>
+    <!-- /HEADER -->
+    
+    
+    <!-- CLASS INFORMATION -->
+    <div class="class_full">
+        <div class="top_title">
+	        <h2>課程資訊</h2>
+	        <h3>CLASS INFORMATION</h3>
+	    </div>
+        
+        <ul class="class">
+			
+			<li>
+				<div class="class_img">
+					<img src="/static/images/class/class1.jpg">
+				</div>
+				<div class="class_txt">
+					<h2>經絡和緩瑜伽</h2>
+					<div class="class_date"><span>上課時間：</span><br>週一 09:00~10:00<br>週三 18:30~19:30</div>
+					<p><span>好處：</span><br>提升體力、增強抵抗力、充滿能量、全身放鬆平衡</p>
+				</div>
+			</li>
+			
+			<li>
+				<div class="class_img">
+					<img src="/static/images/class/class2.jpg">
+				</div>
+				<div class="class_txt">
+					<h2>抗力球皮拉提斯 <span>*適合初學者</span></h2>
+					<div class="class_date"><span>上課時間：</span><br>週一 10:30~11:30<br>週二 19:40~20:40<br>週三 12:10~13:10<br>週六 10:00~11:00</div>
+					<p><span>好處：</span><br>加速新陳代謝、緊實腹部、雕塑全身曲線、強化腰部背部肌群、加強下半身循環</p>
+				</div>
+			</li>
+			<li>
+				<div class="class_img">
+					<img src="/static/images/class/class3.jpg">
+				</div>
+				<div class="class_txt">
+					<h2>經絡皮拉提斯 <span>*適合初學者</span></h2>
+					<div class="class_date"><span>上課時間：</span><br>週一 12:10~13:10<br>週四 18:30~19:30</div>
+					<p><span>好處：</span><br>改善手腳冰冷、提升柔軟度、放鬆腰部背部肌群、舒緩肩頸酸痛、調整體型美化體態</p>
+				</div>
+			</li>
+			<li>
+				<div class="class_img">
+					<img src="/static/images/class/class4.jpg">
+				</div>
+				<div class="class_txt">
+					<h2>經絡瑜伽提斯</h2>
+					<div class="class_date"><span>上課時間：</span><br>週二 18:30~19:30<br>週三 19:40~20:40</div>
+					<p><span>好處：</span><br>預防骨質疏鬆、加速燃燒脂肪、雕塑全身體態、釋放緊繃與壓力</p>
+				</div>
+			</li>
+			<li>
+				<div class="class_img">
+					<img src="/static/images/class/class5.jpg">
+				</div>
+				<div class="class_txt">
+					<h2>經絡伸展瑜伽</h2>
+					<div class="class_date"><span>上課時間：</span><br>週二 20:50~10:00<br>週五 12:10~13:10</div>
+					<p><span>好處：</span><br>促進全身血液循環、加速新陳代謝旺盛、提高全身含氧量充滿活力、幫助淋巴排毒更順暢</p>
+				</div>
+			</li>
+			<li>
+				<div class="class_img">
+					<img src="/static/images/class/class6.jpg">
+				</div>
+				<div class="class_txt">
+					<h2>彈力帶瑜伽提斯 <span>*適合初學者</span></h2>
+					<div class="class_date"><span>上課時間：</span><br>週三 10:30~11:30<br>週四 19:40~20:40<br>週五 09:00~10:00</div>
+					<p><span>好處：</span><br>加強心肺功能充滿元氣、塑腰瘦腹修飾下半身、改善睡眠品質不良、<br>調節臟腑功能平衡生理機能</p>
+				</div>
+			</li>
+			<li>
+				<div class="class_img">
+					<img src="/static/images/class/class7.jpg">
+				</div>
+				<div class="class_txt">
+					<h2>彈力帶皮拉提斯 <span>*適合初學者</span></h2>
+					<div class="class_date"><span>上課時間：</span><br>週三 09:15~10:15<br>週五 10:30~11:30<br>週日 11:10~12:10</div>
+					<p><span>好處：</span><br>改善更年期不適、緊實肌肉塑身美型、預防退化老化、提升肢體平衡協調</p>
+				</div>
+			</li>
+			<li>
+				<div class="class_img">
+					<img src="/static/images/class/class8.jpg">
+				</div>
+				<div class="class_txt">
+					<h2>抗力球瑜伽提斯 <span>*適合初學者</span></h2>
+					<div class="class_date"><span>上課時間：</span><br>週六 11:10~12:10<br>週日 10:00~11:00</div>
+					<p><span>好處：</span><br>改善腰腹無力、預防骨質疏鬆、提升四肢靈活度、保養生殖泌尿系統、舒緩腰背酸痛</p>
+				</div>
+			</li>
+			
+        </ul>
+    </div>
+    <!-- /CLASS INFORMATION -->
+
+    
+    
+	<!-- FOOTER -->	
+	<div clss="bottom_cover">{% block share_foot %}{% endblock %}</div>
+    <!-- /FOOTER -->
+    
+    
+    
+    
+    
+    
 </body>
 
 </html>
