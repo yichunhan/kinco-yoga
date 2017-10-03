@@ -58,8 +58,8 @@ body {font-family:Helvetica, Arial, "微軟正黑體","Microsoft Jhenghei",sans-
 
 /*========== HEADER ==========*/
 .header_full{ width: 100%; background-color: #fff;}
-.header{ width: 1100px; height: 150px; margin: 0 auto; overflow: hidden; position: relative;}
-.header .top{ overflow: hidden; position: absolute; top: 10px; right: 0px;}
+.header{ width: 1024px; height: 150px; margin: 0 auto; overflow: hidden; position: relative;}
+.header .top{ overflow: hidden; position: absolute; top: 10px; right: 50px;}
 .header .top li{ display: block; float: left; font-size: 15px; color: #333; margin-left: 20px;}
 .header .top li a{ display: block; color: #333; text-decoration: none;}
 .header .top li a:hover{ color: #587687; text-decoration: underline;}
@@ -69,7 +69,7 @@ body {font-family:Helvetica, Arial, "微軟正黑體","Microsoft Jhenghei",sans-
 
 /*========== NAVIGATION ==========*/
 .nav_full{ width: 100%; background-color: #587687;}
-.nav{ width: 1100px; height: 50px; margin: 0 auto;}
+.nav{ width: 1024px; height: 50px; margin: 0 auto;}
 .menu_cover{ width: 100%; height: 300px; margin-bottom: -100px; position: relative; z-index: 100;}
 ul.drop-down-menu{ width: 896px; margin: 0 auto; /*display: inline-block;*/  font-size: 18px; color: #fff; }
 ul.drop-down-menu li{ position: relative;  white-space: nowrap; }
@@ -94,8 +94,8 @@ ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/ display: bloc
 
 /*========== INTRO ==========*/
 .intro_full{ width: 100%; background-color: #fff;}
-.intro{ width: 1000px; margin: 0 auto; overflow: hidden; padding: 70px 50px;}
-.intro .intro_img{ margin-right: 120px; float: left;}
+.intro{ width: 924px; margin: 0 auto; overflow: hidden; padding: 70px 50px;}
+.intro .intro_img{ margin-right: 100px; float: left;}
 .intro .intro_txt{ width: 520px; color: #333; float: left; padding-top: 20px;}
 .intro .intro_txt h2{ font-size: 24px; color: #587687; margin-bottom: 20px; font-weight: bold;}
 .intro .intro_txt p{ font-size: 15px; color: #333; line-height: 25px; text-align: justify; text-justify:inter-ideograph;}
@@ -104,7 +104,7 @@ ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/ display: bloc
 
 /*========== NEWS ==========*/
 .news_full{ width: 100%; background-color: #587687;}
-.news{ width: 1000px; margin: 0 auto; overflow: hidden; padding: 70px 50px;}
+.news{ width: 924px; margin: 0 auto; overflow: hidden; padding: 70px 50px;}
 .news h2{ font-size: 32px; color: #fff; padding-bottom: 5px; border-bottom: 3px solid #fff; width: 130px; margin: 0 auto;}
 .news ul{ overflow: hidden; margin-top: 40px;}
 .news li{ display: block; border-bottom: 1px dashed #fff; padding: 15px 0; font-size: 15px; color: #fff; overflow: hidden; cursor: pointer;}
@@ -119,12 +119,12 @@ ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/ display: bloc
 
 /*========== COURSE ==========*/
 .course_full{ width: 100%; background-color: #d07557;}
-.course{ width: 1000px; margin: 0 auto; overflow: hidden; padding: 70px 50px;}
+.course{ width: 924px; margin: 0 auto; overflow: hidden; padding: 70px 50px;}
 .course h2{ font-size: 32px; color: #fff; padding-bottom: 5px; border-bottom: 3px solid #fff; width: 130px; margin: 0 auto;}
-.course ul{ width: 1000px; margin-top: 40px; }
-.course li{ width: 1000px; display: inline-block; font-size: 15px; color: #333; text-align: center;}
-.course .course_week{ width: 120px; font-size: 21px; padding-top: 15px; color: #fff; text-align: left; float: left;}
-.course .course_content{ width: 160px; height: 47px; margin-right: 10px; margin-bottom: 10px; border-radius: 50px; float: left; padding-top: 5px; line-height: 20px; }
+.course ul{ width: 924px; margin-top: 40px; }
+.course li{ width: 924px; display: inline-block; font-size: 15px; color: #333; text-align: center;}
+.course .course_week{ width: 100px; font-size: 21px; padding-top: 15px; color: #fff; text-align: left; float: left;}
+.course .course_content{ width: 154px; height: 47px; margin-right: 10px; margin-bottom: 10px; border-radius: 50px; float: left; padding-top: 5px; line-height: 20px; }
 .course .course_mon{ background-color: #fdf883; }
 .course .course_tus{ background-color: #f6d382; }
 .course .course_wed{ background-color: #f6c4bd; }
@@ -143,9 +143,9 @@ ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/ display: bloc
 .coach_full .top_title{ text-align: center; color: #fff; padding: 65px 50px; background: url('../../static/images/coach/bg.jpg') center top repeat-x;}
 .coach_full .top_title h2{ font-size: 40px;}
 .coach_full .top_title h3{ font-size: 21px; margin-top: 5px;}
-.coach{ width: 1000px; margin: 50px auto; overflow: hidden; padding: 0px 50px;}
+.coach{ width: 924px; margin: 50px auto; overflow: hidden; padding: 0px 50px;}
 .coach .coach_img{ width: 300px; float: left;}
-.coach .coach_intro{ width: 620px; padding-left: 80px; float: right;}
+.coach .coach_intro{ width: 540px; float: right;}
 .coach .coach_intro h2{ font-size: 24px; margin-bottom: 20px; color: #587687;}
 .coach .coach_intro h3{ font-size: 16px; margin-bottom: 10px; color: #000;}
 .coach .coach_intro p{ font-size: 14px; margin-bottom: 20px; line-height: 22px; color: #666; text-align: justify; text-justify:inter-ideograph;}
@@ -159,11 +159,11 @@ ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/ display: bloc
 .class_full .top_title{ text-align: center; color: #fff; padding: 65px 50px; background: url('../../static/images/class/bg.jpg') center top repeat-x;}
 .class_full .top_title h2{ font-size: 40px;}
 .class_full .top_title h3{ font-size: 21px; margin-top: 5px;}
-.class{ width: 1000px; margin: 50px auto; overflow: hidden; padding: 0px 50px;}
+.class{ width: 924px; margin: 50px auto; overflow: hidden; padding: 0px 50px;}
 .class li{ border-bottom: 1px #999 dotted; overflow: hidden; padding: 30px 0;}
 .class li:last-child{ border-bottom: none; }
 .class .class_img{ width: 345px; display: block; float: left;}
-.class .class_txt{ width: 600px; margin-left: 55px; overflow: hidden; float: right;}
+.class .class_txt{ width: 540px; overflow: hidden; float: right;}
 .class .class_txt h2{ font-size: 18px; color: #587687; margin-bottom: 10px;}
 .class .class_txt h2 span{ font-size: 15px; color: #d07557;}
 .class .class_date{ font-size: 15px; color: #666; line-height: 22px; margin-bottom: 10px;}
@@ -178,14 +178,14 @@ ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/ display: bloc
 .video_full .top_title{ text-align: center; color: #fff; padding: 65px 50px; background: url('../../static/images/video/bg.jpg') center top repeat-x;}
 .video_full .top_title h2{ font-size: 40px;}
 .video_full .top_title h3{ font-size: 21px; margin-top: 5px;}
-.video{ width: 1000px; margin: 50px auto; overflow: hidden; padding: 0px 50px;}
+.video{ width: 924px; margin: 50px auto; overflow: hidden; padding: 0px 50px;}
 .video .tag{ overflow: hidden;}
 .video .tag li{ padding: 0px 20px; margin-bottom: 10px; display: inline-block; font-size: 15px; color: #fff; line-height: 50px; background-color: #999; border-radius: 50px; text-align: center; }
 .video .tag li.active{ background-color: #578a80;}
 .video .video_list{ overflow: hidden; }
 .video .video_list li{ float: left; display: inline-block; margin-right: 14px; padding-top: 20px; overflow: hidden;}
 .video .video_list li:nth-child(3n+0){ margin-right: 0px;}
-.video .video_list li a{ width: 324px; height: 260px; display: block; }
+.video .video_list li a{ width: 298px; height: 260px; display: block; }
 .video .video_list li a:hover{ opacity: 0.6;}
 .video .video_list .need_img{ display: block; position: relative;}
 .video .video_list .need_img:before{ position: absolute; content: url('../../static/images/video/play.png'); top:50%; left: 50%; transform: translate(-50%, -50%);}
@@ -199,11 +199,11 @@ ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/ display: bloc
 .exp_full .top_title{ text-align: center; color: #fff; padding: 65px 50px; background: url('../../static/images/exp/bg.jpg') center top repeat-x;}
 .exp_full .top_title h2{ font-size: 40px;}
 .exp_full .top_title h3{ font-size: 21px; margin-top: 5px;}
-.exp{ width: 1000px; margin: 50px auto; overflow: hidden; padding: 0px 50px;}
+.exp{ width: 924px; margin: 50px auto; overflow: hidden; padding: 0px 50px;}
 .exp li{ border-bottom: 1px #999 dotted; overflow: hidden; padding: 30px 0;}
 .exp li:last-child{ border-bottom: none; }
 .exp .exp_img{ width: 345px; display: block; float: left;}
-.exp .exp_txt{ width: 600px; margin-left: 55px; overflow: hidden; float: right;}
+.exp .exp_txt{ width: 540px; overflow: hidden; float: right;}
 .exp .exp_date{ font-size: 18px; color: #587687; margin-bottom: 5px;}
 .exp .exp_txt h2{ font-size: 18px; color: #333; margin-bottom: 20px;}
 .exp .exp_txt p{ font-size: 15px; color: #666; line-height: 25px; text-align: justify; text-justify:inter-ideograph; margin-bottom: 20px;}
@@ -216,7 +216,7 @@ ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/ display: bloc
 .faq_full .top_title{ text-align: center; color: #fff; padding: 65px 50px; background: url('../../static/images/faq/bg.jpg') center top repeat-x;}
 .faq_full .top_title h2{ font-size: 40px;}
 .faq_full .top_title h3{ font-size: 21px; margin-top: 5px;}
-.faq{ width: 1000px; margin: 50px auto; overflow: hidden; padding: 0px 50px;}
+.faq{ width: 924px; margin: 50px auto; overflow: hidden; padding: 0px 50px;}
 .faq #faq_list h2{ margin-bottom: 30px; font-size: 24px; color: #587687; line-height: 40px; padding-left: 10px; border-left: 5px solid #587687;} 
 .faq #faq_list ul{ overflow: hidden; margin-bottom: 50px;}
 .faq #faq_list li{ display: block; border-bottom: 1px #999 dotted; margin-bottom: 15px;}
@@ -231,9 +231,9 @@ ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/ display: bloc
 
 /*========== FOOTER ==========*/
 .footer_full{ width: 100%; background-color: #fff; border-top: 5px solid #587687;}
-.footer{ width: 1000px; height: 100px; margin: 0 auto; padding: 0 50px; overflow: hidden; font-size: 15px; color: #000;}
+.footer{ width: 924px; height: 100px; margin: 0 auto; padding: 0 50px; overflow: hidden; font-size: 15px; color: #000;}
 .bottom_cover{ width: 100%; height: 105px;}
-.footer li{ display: inline-block; vertical-align: middle; margin-right: 50px;}
+.footer li{ display: inline-block; vertical-align: middle; margin-right: 14px;}
 .footer li:last-child{ margin-right: 0px;} 
 /*========== /FOOTER ==========*/
 
