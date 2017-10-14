@@ -185,10 +185,11 @@ ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/ display: bloc
 .video .video_list{ overflow: hidden; }
 .video .video_list li{ float: left; display: inline-block; margin-right: 14px; padding-top: 20px; overflow: hidden;}
 .video .video_list li:nth-child(3n+0){ margin-right: 0px;}
-.video .video_list li a{ width: 298px; height: 260px; display: block; }
+.video .video_list li a{ width: 298px; height: 300px; display: block; }
 .video .video_list li a:hover{ opacity: 0.6;}
 .video .video_list .need_img{ display: block; position: relative;}
 .video .video_list .need_img:before{ position: absolute; content: url('../../static/images/video/play.png'); top:50%; left: 50%; transform: translate(-50%, -50%);}
+.video .video_list .need_img img{ width: 298px;}
 .video .video_list li h2{ margin-top: 15px; font-size: 18px; color: #333; line-height: 20px;}
 .video .video_list li h3{ margin-top: 5px; font-size: 14px; color: #999; line-height: 20px;}
 /*========== /VIDEO ==========*/
@@ -203,6 +204,7 @@ ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/ display: bloc
 .exp li{ border-bottom: 1px #999 dotted; overflow: hidden; padding: 30px 0;}
 .exp li:last-child{ border-bottom: none; }
 .exp .exp_img{ width: 345px; display: block; float: left;}
+.exp .exp_img img{ width: 345px;}
 .exp .exp_txt{ width: 540px; overflow: hidden; float: right;}
 .exp .exp_date{ font-size: 18px; color: #587687; margin-bottom: 5px;}
 .exp .exp_txt h2{ font-size: 18px; color: #333; margin-bottom: 20px;}
@@ -257,11 +259,11 @@ ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/ display: bloc
 	.mobile_menu_btn_fb{ float: right; height: 30px;}
 	.mobile_menu_btn_open img, .mobile_menu_btn_fb img{ height: 100%;}
 	
-	.mobile_nav{ display: none; width: 100%; position: absolute; top: 0px; background: #fff; z-index: 1000; padding-bottom: 300px;}
+	.mobile_nav{ display: none; width: 100%; position: absolute; top: 0px; background: #fff; z-index: 1000; padding-bottom: 0px;}
 	.mobile_menu_btn_close{ position: absolute; width: 50px; height: 50px; top: 0px; right: 0px;}
 	.mobile_menu_btn_close img{ width: 100%;}
 	
-	.mobile_menu_list{ padding:20px 0; background-color: #587687; color: #fff;}
+	.mobile_menu_list{ padding:20px 0 0 0; background-color: #587687; color: #fff;}
 	.mobile_menu_list li{ text-align: center; border-bottom: 1px solid #bababa; } 
 	.mobile_menu_list li a{ padding: 10px 0; display:inline-block; font-size: 16px; line-height: 30px; text-decoration: none; color: #fff;}
 	.mobile_menu_list ul li{ background-color: #bababa; border-bottom: 1px dashed #fff;}
