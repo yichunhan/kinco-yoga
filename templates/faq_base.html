@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title></title>
+	{% block share_head %}{% endblock %}
+</head>
+
+
+<body>
+	
+	
+    <!-- HEADER -->
+	{% block share_menu %}{% endblock %}
+    <!-- /HEADER -->
+    
+    
+    <!-- FAQ -->
+    <div class="faq_full">
+        <div class="top_title">
+	        <h2>線上諮詢</h2>
+	        <h3>FAQ</h3>
+	    </div>
+        
+        <div class="faq">
+			
+			<div id="faq_list">
+				<h2>關於報名</h2>
+				<ul>
+					{% for faq in register_faqs %}
+					<li>
+						<div class="question" onclick="unfold('q{{ forloop.counter }}');">{{faq.question}}</div>
+						<div class="answer" id="q{{ forloop.counter }}">{{faq.answer}}</div>
+					</li>
+					{% endfor %}
+				</ul>
+				
+				<h2>關於上課</h2>
+				<ul>
+					{% for faq in course_faqs %}
+						<li>
+							<div class="question" onclick="unfold('q{{ forloop.counter }}');">{{faq.question}}</div>
+							<div class="answer" id="q{{ forloop.counter }}">{{faq.answer}}</div>
+						</li>
+					{% endfor %}
+				</ul>
+			</div>
+			
+			<div id="faq_message">
+				<h2>留言板</h2>
+			</div>
+			
+        </div>
+    </div>
+    <!-- /FAQ -->
+
+    
+    
+    <!-- FOOTER -->
+    <div clss="bottom_cover">{% block share_foot %}{% endblock %}</div>
+    <!-- /FOOTER -->
+    
+    
+    <!-- answer hide-->
+	<script>
+	$('.answer').css('display','none');
+	function unfold ( n ) {
+	　　var s = document.getElementById( n ).style;
+	　　s.display = ( s.display == 'none' ) ? '' : 'none' ;
+	}
+	</script>
+	
+	
+	    
+    
+    
+</body>
+
+</html>

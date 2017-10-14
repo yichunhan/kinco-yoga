@@ -67,38 +67,15 @@
         <div class="news">
             <h2>最新消息</h2>
             <ul>
+				{% for each_news in news%}
                 <li>
-                    <a data-fancybox="news" data-src="#news20170101" href="javascript:;">
-	                    <div class="news_date">2017-01-01</div>
-	                    <div class="news_title">這只是假字這只是假字這只是假字這只是假字這只是假字這只是假字</div>
+                    <a data-fancybox="news" data-src="#news{{forloop.counter}}" href="javascript:;">
+	                    <div class="news_date">{{each_news.publish_date}}</div>
+	                    <div class="news_title">{{each_news.title}}</div>
                     </a>
-                    <div class="news_txt" id="news20170101">1 最新消息的展開文字，都是假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的文字唷</div>
-                </li>
-                <li>
-                    <a data-fancybox="news" data-src="#news20170102" href="javascript:;">
-	                    <div class="news_date">2017-01-02</div>
-	                    <div class="news_title">這只是假字這只是假字這只是假字這只是假字這只是假字這只是假字</div>
-                    </a>
-                    <div class="news_txt" id="news20170102">2 最新消息的展開文字，都是假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的文字唷</div>
-                </li><li>
-                    <a data-fancybox="news" data-src="#news20170103" href="javascript:;">
-	                    <div class="news_date">2017-01-03</div>
-	                    <div class="news_title">這只是假字這只是假字這只是假字這只是假字這只是假字這只是假字</div>
-                    </a>
-                    <div class="news_txt" id="news20170103">3 最新消息的展開文字，都是假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的文字唷</div>
-                </li><li>
-                    <a data-fancybox="news" data-src="#news20170104" href="javascript:;">
-	                    <div class="news_date">2017-01-04</div>
-	                    <div class="news_title">這只是假字這只是假字這只是假字這只是假字這只是假字這只是假字</div>
-                    </a>
-                    <div class="news_txt" id="news20170104">4 最新消息的展開文字，都是假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的文字唷</div>
-                </li><li>
-                    <a data-fancybox="news" data-src="#news20170105" href="javascript:;">
-	                    <div class="news_date">2017-01-05</div>
-	                    <div class="news_title">這只是假字這只是假字這只是假字這只是假字這只是假字這只是假字</div>
-                    </a>
-                    <div class="news_txt" id="news20170105">5 最新消息的展開文字，都是假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的假的文字唷</div>
-                </li>
+                    <div class="news_txt" id="news{{forloop.counter}}">{{each_news.content}}</div>
+				</li>
+				{% endfor %}
             </ul>
         </div>
     </div>
